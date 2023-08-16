@@ -3,6 +3,7 @@ import Zaza from "images/judges/zaza.png";
 import Furqan from "images/judges/furqan.png";
 import Suman from "images/judges/suman.png";
 import Ivan from "images/judges/ivan.png";
+import Vishal from "images/judges/Vishal.jpeg";
 
 const judges = [
   {
@@ -25,6 +26,11 @@ const judges = [
     role: "Founder, Cerebral Valley",
     imageSrc: Ivan,
   },
+  {
+    name: "Vishal",
+    role: "Founding Partner of StonebriarX",
+    imageSrc: Vishal,
+  },
 ];
 
 export const Judges = () => {
@@ -34,7 +40,7 @@ export const Judges = () => {
       className="w-full flex flex-col justify-center items-center pb-20 lg:py-20"
     >
       <img className="w-72 h-20" src="/images/judges.png" alt="" />
-      <div className="grid grid-cols-1 gap-y-12 lg:grid-cols-4 gap-x-10 mt-12 lg:mt-20">
+      <div className="grid grid-cols-1 gap-y-12 lg:grid-cols-3 items-center gap-x-10 mt-12 lg:mt-20">
         {judges.map((judge, index) => (
           <div key={index} className="flex flex-col">
             <div className="w-60 h-60">
